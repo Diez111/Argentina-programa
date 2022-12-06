@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet"><!-- Estilo bootstrap-->
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"><!-- Icono del menu superior-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lineadetiempo.css" rel="stylesheet">
+</head>
+<body style="background-color: rgb(187, 207, 212);">
+
+     <!-- MENU SUPERIOR-->
+
+
+ 
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="imagenes/logo.png" alt="" class="logo" height="70" width="110">
+            </a>
+            <ul>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+
+       <!-- BANNER-->
+       <section class="imagen-banner">
+        <div class="filtro-oscuro-imagen"></div>
+            <div class="centradoinicio">
+                <div class="row"> <!--Fila de Bootstrap-->
+                    <div class="col-md-12"><!--Estilo de Bootstrap-->
+                        <h1>Lautaro Diez</h1>
+                        <p class="centradoinicio-subtitulo"><span>Diseñador</span>
+                        <span class="colorenfasis">•</span>
+                        <span>Tecnico electronico</span> <span class=
+                        "colorenfasis">•</span> <span>Estudiante de ingenieria en sistemas</span></p>
+                    </div>
+                </div>
+    
+
+                
+                <div class="bottom">
+                    <a href="#sobremi">
+                    <div class="raton-icon">
+                        <div class="scroll">
+                        </div>
+                    </div></a>
+                </div>
+            </div><!-- /centradoinicio -->
+    </section>
+      <!-- BANNER-->
+    
+    
+       <!-- ABOUT SECTION -->
+       <section class="section-primary" id="sobremi">
+        <div class="container">
+            <div class="fila">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <img class="profilepic" src= "imagenes/Yo.jpg">
+                    <h2>Sobre mi</h2>
+    
+                    <p class="lead">Soy una persona muy ordenada a la cual le gusta tener anotadas las tareas
+                        que debo hacer para realizarlas en un orden pre establecido y de esa
+                        manera organizar mejor el tiempo.
+                        Una de las razones por la cual estudio la carrera de Ingeniería en sistemas
+                        es por el enfoque que tiene sobre el uso de la información y como se
+                        gestionan los procesos necesarios para llegar a realizar una tarea o
+                        proyecto, de la forma mas eficiente posible. Todo esto aplicando algoritmos
+                        informáticos que vayan mejorando a medida que tengan mas información.</p>
+                </div><!-- /col-md-6 Bootstrap -->
+            </div><!--  fila -->
+        </div><!-- contenedor -->
+    </section>
+
+
+    <!-- Experiencia -->
+    <section class="imagen-banner" id="experiencia">
+        <div class="filtro-oscuro-imagen"></div>
+    
+        <div class="container">
+            <div class="fila">
+                <div class="col-md-12 section-heading"><!-- col-md-12 Bootstrap -->
+                    <h2>Experiencia</h2>
+                    <p class="lead"> Trabajos anteriores</p>
+                </div>
+            </div>
+    
+
+            <div class="fila">
+
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Montaje</h2>
+                    <p>Laser Argentina. En tareas de montaje y carga de firewall como parte de las 200hs de practicas de los colegios tecnicos de la provincia de Buenos Aires</p>
+                </div>
+
+                <div class="fila">
+                    <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                        <span class="lnr lnr-user"></span>
+                        <h2>Montaje</h2>
+                        <p>Laser Argentina. En tareas de montaje y carga de firewall como parte de las 200hs de practicas de los colegios tecnicos de la provincia de Buenos Aires</p>
+                    </div>
+
+                    <div class="fila">
+                        <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                            <span class="lnr lnr-user"></span>
+                            <h2>Montaje</h2>
+                            <p>Laser Argentina. En tareas de montaje y carga de firewall como parte de las 200hs de practicas de los colegios tecnicos de la provincia de Buenos Aires</p>
+                        </div>
+
+            </div> <!-- / fila -->
+  
+        </div><!-- /container -->
+    </section>
+
+    
+      <!-- Estudios -->
+    <section class="section-primary" id="estudios">
+        <div class="container">
+            <div class="fila">
+                <div class="col-md-12 section-heading"><!-- col-md-12 Bootstrap -->
+                    <h2>Mis estudios</h2>
+                    <p class="lead">Linea de tiempo</p>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="col-md-12"><!-- col-md-12 Bootstrap -->
+                    <!-- Linea de tiempo-->
+                    <div id="lineadetiempo">
+                        <!--  Elemento de línea de tiempo, copiar desde aquí para crear varias cajas -->
+    
+    
+                        <div class="lineadetiempo-item">
+                            <!--Icono dentro del círculo-->
+                            <div class="lineadetiempo-icon">
+                            </div>
+                            <!-- Contenido del cuadro de tiempo y posición (derecha o izquierda)-->
+                            <div class="lineadetiempo-contenido">
+                                <h2>Primaria 2009-2015</h2>
+                                <p>Colegio Santa Ana. Ciudad Evita.</p>
+                            </div>
+                        </div>
+                        <!-- Elemento de línea de tiempo, copiar desde aquí para crear varias cajas -->
+    
+    
+                        <div class="lineadetiempo-item">
+                            <!--Icono dentro del círculo-->
+                            <div class="lineadetiempo-icon">
+                            </div>
+                            <!-- Contenido del cuadro de tiempo y posición (derecha o izquierda)-->  
+                            <div class="lineadetiempo-contenido">
+                                <h2>Secundario tecnico 2016-2022</h2>
+                                <p>Instituto Madero.</p>
+                            </div>
+                        </div>
+                        <!-- Elemento de línea de tiempo, copiar desde aquí para crear varias cajas -->
+    
+    
+                        <div class="lineadetiempo-item">
+                            <!--Icono dentro del círculo-->
+                            <div class="lineadetiempo-icon">
+                            </div>
+                            <!-- Contenido del cuadro de tiempo y posición (derecha o izquierda)-->
+                            <div class="lineadetiempo-contenido">
+                                <h2>Ingenieria en Sistemas 2023-2028</h2>
+                                <p>UTN (Universidad Tecnológica Nacional)</p>
+                            </div>
+                        </div>
+                        <!-- Elemento de línea de tiempo, copiar desde aquí para crear varias cajas -->
+    
+                      
+                        </div>
+                    </div>
+                    <!-- col-md-12 Bootstrap-->
+                </div>
+                <!-- fila -->
+            </div>
+        </div> <!-- contenedor -->
+    </section>
+
+
+    
+    
+    <section class="imagen-banner" id="cursos">
+        <div class="filtro-oscuro-imagen"></div>
+    
+        <div class="container">
+            <div class="fila">
+                <div class="col-md-12 section-heading"><!-- col-md-12 Bootstrap -->
+                    <h2>Cursos</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>#Séprogramar</h2>
+                    <p>Curso de introduccion a los conocimientos basicos de la programacion</p>
+                </div>
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Linux Essentials (Cisco)</h2>
+                    <p>Curso del manejo de linux como servidor</p>
+                </div>
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Networking Essentials (Cisco)</h2>
+                    <p>Curso de manejo de redes y configuracion de las mismas</p>
+                </div>
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Introducción al desarrollo web 1 (Google)</h2>
+                    <p>Primera parte del curso introductorio de HTML y CSS de Google</p>
+                </div>
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Introducción al desarrollo web 2 (Google)</h2>
+                    <p>Segunda parte del curso introductorio de HTML y CSS de Google</p>
+                </div>
+                <div class="col-md-4 text-center"><!-- col-md-4 Bootstrap -->
+                    <span class="lnr lnr-user"></span>
+                    <h2>Ciberseguridad en el teletrabajo (Google): </h2>
+                    <p>Consejos para manter un habito de trabajo seguro con el teletrabajo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Pie de pagina-->
+    <footer class="footer">
+        <div class="container">
+            <div class="fila">
+                <div class="col-md-4">
+                    <p>Github: <a href="https://github.com/Diez111"> Diez Lautaro</a><br>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p>Hecho con ❤️ por Diez Lautaro</a></p>
+                </div>
+            </div><!-- fila -->
+        </div><!-- contenedor -->
+    </footer>
+    <!-- Pie de pagina-->
+    
+    
+    <script src="funcion.js"></script>
+    </body>
+    </html>

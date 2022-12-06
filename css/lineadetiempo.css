@@ -1,0 +1,182 @@
+/*Estilo del la linea de tiempo*/
+
+
+
+header:after, #lineadetiempo .lineadetiempo-item:after, header:before, #lineadetiempo .lineadetiempo-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+ *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: #f9f9f9;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, tahoma, verdana;
+  line-height: 20px;
+  font-size: 14px;
+  color: #726f77;
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.project-name {
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+
+.timelinedot {
+  margin: 13px;  
+  color:white;
+  overflow: hidden;
+}
+
+
+#lineadetiempo {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+#lineadetiempo:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #028fc7;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+#lineadetiempo:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+}
+#lineadetiempo .lineadetiempo-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+#lineadetiempo .lineadetiempo-item .lineadetiempo-icon {
+  background: #0d2566;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#lineadetiempo .lineadetiempo-item .lineadetiempo-icon svg {
+  position: relative;
+  top: 14px;
+  left: 14px;
+  overflow: hidden;
+}
+#lineadetiempo .lineadetiempo-item .lineadetiempo-contenido {
+  overflow: hidden;
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#lineadetiempo .lineadetiempo-item .lineadetiempo-contenido h2 {
+  overflow: hidden;
+  padding: 15px;
+  background: #127385;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+#lineadetiempo .lineadetiempo-item .lineadetiempo-contenido p {
+  padding-top: 15px;
+}
+
+#lineadetiempo .lineadetiempo-item .lineadetiempo-content{
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  #lineadetiempo {
+    overflow: hidden;
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #lineadetiempo:before {
+    overflow: hidden;
+    left: 0;
+  }
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-contenido{
+    width: 90%;
+    float: right;
+    overflow: hidden;
+  }
+
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-icon {
+    overflow: hidden;
+    left: 0;
+  }
+}
+
+
