@@ -10,7 +10,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
  }
  body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -21,11 +21,13 @@ html {
 /* 02. Menu superior
  * =================================================================== */
  nav{
+    overflow: hidden;
     background: #000000;
     height: 80px;
     width: 100%;
 }
 .enlace{
+    overflow: hidden;
     padding: 1px 20px;
 }
 .logo{
