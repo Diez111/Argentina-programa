@@ -20,7 +20,7 @@ html {
 
 /* 02. Menu superior
  * =================================================================== */
- nav{
+ nav{ 
     overflow: hidden;
     background: #000000;
     height: 80px;
