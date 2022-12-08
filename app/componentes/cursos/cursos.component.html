@@ -91,5 +91,95 @@
           </div>
           <div role="tablist" class="carousel__indicadores"></div>
       </div>
+
+
+      <div class="middle">
+        <a  href="#cursoagregar" class="btn btn3">➕ Agregar "cursos"</a>
+        <a  href="#cursoseditar" class="btn btn3">✏️ Editar "cursos"</a>
+        <a href="#cursoeliminar" class="btn btn4">🗑️ Eliminar "cursos"</a>
+      </div>
+  
+    <div id="cursoseditar" class="modalmask">
+        <div class="modalbox rotate">
+   
+                <div class="login">
+                    <h1 class="text-center">Menu de cursos</h1>
+                    <form class="needs-validation">
+                        <div class="form-group was-validated">
+                            <label class="form-label">Numero del estudio a eliminar</label>
+                            <select name="datocurso" id="datocurso">
+                                <option value="1">Laser</option>
+                                <option value="2">X1</option>
+                                <option value="3">X2</option>
+                              </select>
+                        </div>
+                        <div class="form-group was-validated">
+                            <label class="form-label" for="email">Titulo del curso</label>
+                            <input class="form-control" type="email" id="email" required>
+
+                        </div>
+                        <div class="form-group was-validated">
+                            <label class="form-label">Curso Descripcion</label>
+                            <input class="form-control" required>
+                        </div>
+
+                        <span class="fileUpload btn btn-success">
+                            <span class="upl" id="upload">Subir imagen del certificado</span>
+                            <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                          </span><!-- btn-orange -->
+
+                       <input class="btn btn-success w-100" type="submit" value="EDITAR CURSO">          
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    <div id="cursoagregar" class="modalmask">
+        <div class="modalbox rotate">
+   
+                <div class="login">
+                    <h1 class="text-center">Menu de cursos</h1>
+                    <form class="needs-validation">
+                        <div class="form-group was-validated">
+                            <label class="form-label" for="email">Titulo del curso</label>
+                            <input class="form-control" type="email" id="email" required>
+
+                        </div>
+                        <div class="form-group was-validated">
+                            <label class="form-label">Curso Descripcion</label>
+                            <input class="form-control" required>
+                        </div>
+
+                        <span class="fileUpload btn btn-success">
+                            <span class="upl" id="upload">Subir imagen del certificado</span>
+                            <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                          </span><!-- btn-orange -->
+
+                       <input class="btn btn-success w-100" type="submit" value="AGREGAR CURSO">          
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    <div id="cursoeliminar" class="modalmask">
+        <div class="modalbox rotate">
+   
+                <div class="login">
+                    <h1 class="text-center">Menu de cursos</h1>
+                    <form class="needs-validation">
+                        <div class="form-group was-validated">
+                            <label class="form-label">Numero del estudio a eliminar</label>
+                            <select name="datocurso" id="datocurso">
+                                <option value="1">Laser</option>
+                                <option value="2">X1</option>
+                                <option value="3">X2</option>
+                              </select>
+                        </div>
+                       <input class="btn btn-success w-100" type="submit" value="ELIMINAR CURSO">          
+                    </form>
+                </div>
+        </div>
+    </div>
+
     </div>
   </section>

@@ -58,5 +58,80 @@
                 <!-- col-md-12 Bootstrap-->
             </div>
             <!-- fila -->
+
+            <div class="middle">
+                <a  href="#estudiosagregar" class="btn btn3">➕ Agregar "estudios"</a>
+                <a  href="#estudioseditar" class="btn btn3">✏️ Editar "estudios"</a>
+                <a href="#estudioseliminar" class="btn btn4">🗑️ Eliminar "estudios"</a>
+              </div>
+          
+            <div id="estudiosagregar" class="modalmask">
+                <div class="modalbox rotate">
+                        <div class="login">
+                            <h1 class="text-center">Menu de estudios</h1>
+                            <form class="needs-validation">
+                                <div class="form-group was-validated">
+                                    <label class="form-label" >Titulo del estudio</label>
+                                    <input class="form-control"  required>
+                                </div>
+                                <div class="form-group was-validated">
+                                    <label class="form-label" >Descripcion del estudio</label>
+                                    <input class="form-control"  required>
+                                </div>
+                               <input class="btn btn-success w-100" type="submit" value="AGREGAR ESTUDIO">          
+                            </form>
+                    
+                        </div>
+                </div>
+            </div>
+
+
+            <div id="estudioseditar" class="modalmask">
+                <div class="modalbox rotate">
+                        <div class="login">
+                            <h1 class="text-center">Menu de estudios</h1>
+                            <form class="needs-validation">
+                                <div class="form-group was-validated">
+                                    <label class="form-label">Numero del estudio a editar</label>
+                                    <select name="DATOESTUDIO" id="DATOESTUDIO">
+                                        <option value="1">Laser</option>
+                                        <option value="2">X1</option>
+                                        <option value="3">X2</option>
+                                      </select>
+                                </div>
+                                <div class="form-group was-validated">
+                                    <label class="form-label" >Titulo del estudio</label>
+                                    <input class="form-control"  required>
+                                </div>
+                                <div class="form-group was-validated">
+                                    <label class="form-label" >Descripcion del estudio</label>
+                                    <input class="form-control"  required>
+                                </div>
+                               <input class="btn btn-success w-100" type="submit" value="EDITAR ESTUDIO">          
+                            </form>
+                        </div>
+                </div>
+            </div>
+
+
+            <div id="estudioseliminar" class="modalmask">
+                <div class="modalbox rotate">
+                        <div class="login">
+                            <h1 class="text-center">Menu de estudios</h1>
+                            <form class="needs-validation">
+                                <div class="form-group was-validated">
+                                    <label class="form-label">Numero del estudio a eliminar</label>
+                                    <select name="DATOESTUDIO" id="DATOESTUDIO">
+                                        <option value="1">Laser</option>
+                                        <option value="2">X1</option>
+                                        <option value="3">X2</option>
+                                      </select>
+                                </div>
+                               <input class="btn btn-success w-100" type="submit" value="ELIMINAR ESTUDIO">          
+                            </form>
+                        </div>
+                </div>
+            </div>
+
         </div>
 </section>

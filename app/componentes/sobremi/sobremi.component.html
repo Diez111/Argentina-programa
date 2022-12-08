@@ -16,5 +16,35 @@
                         informáticos que vayan mejorando a medida que tengan mas información.</p>
                 </div><!-- /col-md-6 Bootstrap -->
             </div><!--  fila -->
+            <div class="middle">
+                <a  href="#modal2" class="btn btn3">✏️ Editar "sobre mi"</a>
+              </div>
+          
+            <div id="modal2" class="modalmask">
+                <div class="modalbox rotate">
+           
+                        <div class="login">
+                           
+                            <h1 class="text-center">Menu de edicion</h1>
+                            
+                            <form class="needs-validation">
+                                <div class="form-group was-validated">
+                                    <label class="form-label" >completar campo</label>
+                                    <input class="form-control" required>
+                                </div>
+                                
+                                <span class="fileUpload btn btn-success">
+                                    <span class="upl" id="upload">Subir imagen</span>
+                                    <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                                  </span><!-- btn-orange -->
+
+                               <input class="btn btn-success w-100" type="submit" value="Cambiar">          
+                            </form>
+                    
+                        </div>
+                   
+                </div>
+            </div>
+
         </div><!-- contenedor -->
     </section>

@@ -3,19 +3,46 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn"  id="inicio">
-            <i class="fas fa-bars"></i>
+            <i style="font-size: 50px;">≡</i>
         </label>
-        <a href="#" class="enlace">
+        <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" class="enlace">
             <img src="../assets/imagenes/logo.png" alt="" class="logo" height="70" width="110">
         </a>
         <ul>
-            <li><a class="active" href="#inicio" >Inicio</a></li>
-            <li><a href="#sobremi" >Sobre mi</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#estudios">Educacion</a></li>
-            <li><a href="#cursos">Cursos</a></li>
+            <li><a class="active" href="#modalinicio">LOGIN</a></li>
+            <li><a href="https://github.com/Diez111" >GitHub</a></li>
+            <li><a href="#cursos">Twitter</a></li>
         </ul>
     </nav>
+
+    <div id="modalinicio" class="modalmask">
+        <div class="modalbox rotate">
+   
+                <div class="login">
+                   
+                    <h1 class="text-center">Menu de login</h1>
+                    
+                    <form class="needs-validation">
+                        <div class="form-group was-validated">
+                            <label class="form-label" for="email">Direccion de email</label>
+                            <input class="form-control" type="email" id="email" required>
+                            <div class="invalid-feedback">
+                                Inserte su direccion de email
+                            </div>
+                        </div>
+                        <div class="form-group was-validated">
+                            <label class="form-label" for="password">Contraseña</label>
+                            <input class="form-control" type="password" id="password" required>
+                            <div class="invalid-feedback">
+                               Inserte su contraseña
+                            </div>
+                        </div>
+                       <input class="btn btn-success w-100" type="submit" value="Cambiar">          
+                    </form>
+            
+                </div>
+            </div>
+        </div>
    </header>
 
 
@@ -42,3 +69,4 @@
         </div>
     </div><!-- /centradoinicio -->
 </section>
+

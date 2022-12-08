@@ -559,19 +559,7 @@ footer p {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*Estilo del la linea de tiempo*/
-
-
 
 header:after, #lineadetiempo .lineadetiempo-item:after, header:before, #lineadetiempo .lineadetiempo-item:before {
     content: '';
@@ -752,3 +740,229 @@ header:after, #lineadetiempo .lineadetiempo-item:after, header:before, #lineadet
   
   
   
+/*Ventana sobresaliente*/
+
+  /*Efecto*/
+.modalmask {
+    overflow: hidden;
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    overflow: hidden;
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    overflow: hidden;
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+/*Movimientos*/
+.movedown {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.rotate {
+    overflow: hidden;
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{  
+    overflow: hidden;     
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+/*Boton de cerrar*/
+.close {
+    overflow: hidden;
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+
+
+/*Estilo del login*/
+
+.login {
+    color: #000000;
+    overflow: hidden;
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.login h1 {
+    overflow: hidden;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.login form .form-group {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    overflow: hidden;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*Estilo boton*/
+
+
+  .btn{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    color: rgb(233, 3, 156);
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #160c9c;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: #75fff8;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+
+  .btn2:hover::before{
+    height: 100%;
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .btn3:hover::before{
+    height: 380%;
+  }
+  
+  .btn4::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  .btn4:hover::before{
+    height: 380%;
+  }
+  
+
+
+
+
+.it .btn-orange
+{
+  background-color: blue;
+  border-color: #777!important;
+  color: #777;
+  text-align: left;
+  width:100%;
+}
+.it input.form-control
+{
+  
+  border:none;
+  margin-bottom:0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: none;
+}
+.it .form-control:focus
+{
+  border-color: #ff4d0d;
+  box-shadow: none;
+  outline: none;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

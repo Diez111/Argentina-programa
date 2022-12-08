@@ -18,6 +18,86 @@
             </div>
      
         </div> <!-- / fila -->
+        <div class="middle">
+            <a  href="#experienciaagregar" class="btn btn3">➕ Agregar "experiencia"</a>
+            <a  href="#experienciaeditar" class="btn btn3">✏️ Editar "experiencia"</a>
+            <a href="#experienciaeliminar" class="btn btn4">🗑️ Eliminar "experiencia"</a>
+          </div>
+        <div id="experienciaeditar" class="modalmask">
+            <div class="modalbox rotate">
+       
+                    <div class="login">
+                       
+                        <h1 class="text-center">Menu de experiencia</h1>
+                        
+                        <form class="needs-validation">
+                            <div class="form-group was-validated">
+                                <label class="form-label">Numero de la experiencia a editar</label>
+                                <select name="DATOSEXPERIENCIA" id="DATOSEXPERIENCIA">
+                                    <option value="1">Laser</option>
+                                    <option value="2">X1</option>
+                                    <option value="3">X2</option>
+                                  </select>
+                            </div>
+                            <div class="form-group was-validated">
+                                <label class="form-label" >Titulo de la experiencia</label>
+                                <input class="form-control" required>
+                            </div>
+                            <div class="form-group was-validated">
+                                <label class="form-label" >Resumen de la experiencia</label>
+                                <input class="form-control" required>
+                            </div>
+                           <input class="btn btn-success w-100" type="submit" value="Cambiar">          
+                        </form>
+                
+                    </div>
+               
+            </div>
+        </div>
 
+
+
+        <div id="experienciaagregar" class="modalmask">
+            <div class="modalbox rotate">
+       
+                    <div class="login">
+                       
+                        <h1 class="text-center">Menu de experiencia</h1>
+                        <form class="needs-validation">
+                            <div class="form-group was-validated">
+                                <label class="form-label" >Titulo de la experiencia</label>
+                                <input class="form-control" required>
+                            </div>
+                            <div class="form-group was-validated">
+                                <label class="form-label" >Resumen de la experiencia</label>
+                                <input class="form-control" required>
+                            </div>
+                           <input class="btn btn-success w-100" type="submit" value="Agregar">          
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+
+        <div id="experienciaeliminar" class="modalmask">
+            <div class="modalbox rotate">
+       
+                    <div class="login">
+                       
+                        <h1 class="text-center">Menu de experiencia</h1>
+                        <form class="needs-validation">
+                            <div class="form-group was-validated">
+                                <label class="form-label">Numero de la experiencia a eliminar</label>
+                                <select name="DATOSEXPERIENCIA" id="DATOSEXPERIENCIA">
+                                    <option value="1">Laser</option>
+                                    <option value="2">X1</option>
+                                    <option value="3">X2</option>
+                                  </select>
+                            </div>
+                           <input class="btn btn-success w-100" type="submit" value="Eliminar">          
+                        </form>
+                    </div>
+            </div>
+        </div>
     </div><!-- /container -->
 </section>
