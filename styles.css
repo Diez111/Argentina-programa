@@ -1,0 +1,754 @@
+/* You can add global styles to this file, and also import other style files */
+/* 01. Estilo general de la pagina
+ * =================================================================== */
+ *{
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+ }
+ body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #000000;
+ }
+
+
+/* 02. Menu superior
+ * =================================================================== */
+ nav{ 
+    overflow: hidden;
+    background: #000000;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    overflow: hidden;
+    padding: 1px 20px;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #9c126e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+/* 03. Estilo basico de la pagina
+ * =================================================================== */
+
+ h1 {
+    font-weight: bold;
+ }
+
+
+ a {
+    cursor: pointer;
+    color: #ff0000;
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration:none;
+    color: #ff0000;
+    opacity: 0.9;
+ }
+
+
+ .colorenfasis{
+    color: #ff0000;
+ }
+
+ .section-primary span {
+    color: #ff0000;
+    font-weight: bolder;
+    opacity: 1;
+ }
+
+
+
+
+
+
+
+
+/* 04. Banner inicial
+ * =================================================================== */
+
+ .imagen-banner {
+ 	background: #151515 url("assets/imagenes/argentina.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display:table;
+    overflow: hidden;
+ }
+
+ .filtro-oscuro-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: .8;
+    overflow: hidden;
+ }
+
+ .centradoinicio {
+    vertical-align: middle;
+    text-align: center;
+    display:table-cell;
+    -webkit-transform: translateY(-2.1rem);
+    -ms-transform: translateY(-2.1rem);
+    transform: translateY(-2.1rem);
+    overflow: hidden;
+}
+
+.centradoinicio .fila {
+    margin-right: 0;
+    margin-left:0;
+}
+
+.centradoinicio h1 {
+    font-size: 84px;
+}
+
+
+
+.section-image span {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 0 10px;
+    font-weight: 100;
+}
+
+.section-image h1 {
+    margin-top: 0;
+}
+
+.section-image p {
+    font-weight: lighter;
+    opacity: 0.9;
+}
+
+
+
+
+/* 05.estilos de la etiqueta "section"
+ * =================================================================== */
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.profilepic {
+    height: 150px;
+    width: auto;
+    border-radius: 300px;
+}
+
+.section-primary p {
+    text-align: justify;
+}
+
+.section-primary {
+    border: #1abc9c;
+}
+
+.section-colour {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.section-colour p {
+    text-align: justify;
+}
+
+.section-heading .lead, .section-heading h2 {
+    text-align: center;
+}
+
+.section-colour {
+    border: #fff;
+}
+
+
+
+
+
+/* 06. Estilo de la linea de tiempo
+ * =================================================================== */
+
+.lineadetiempo-icon .fa {
+    color: white;
+    margin: 14px;
+    font-size: 1.7em;
+    overflow: hidden;
+}
+
+
+/* 07. Fondo de pantalla para diferentes partes de la pantalla
+ * =================================================================== */
+
+#experiencia {
+    background: #151515 url(assets/imagenes/experiencia.jpg) no-repeat center center;
+    height: auto;
+}
+
+#cursos {
+    background: #151515 url(assets/imagenes/cafe.jpg) no-repeat center center;
+    height: auto;
+}
+
+
+/* 08. Pie de pagina
+ * =================================================================== */
+
+footer {
+    display: block;
+    position: static;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+    overflow: hidden;
+
+}
+
+footer p {
+    padding: 15px;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+
+/*  09. Efectos
+ * =================================================================== */
+
+        /* /Icono del raton del inicio
+         * =================================================================== */
+        .raton-icon {
+            border: 2px solid #fff;
+            border-radius: 16px;
+            display: block;
+            height: 50px;
+            margin: 100px auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 30px;
+            z-index: 10;
+        }
+        .raton-icon .scroll {
+            animation-delay: 0s;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-name: scrolling;
+            animation-play-state: running;
+            animation-timing-function: linear;
+        }
+        .raton-icon .scroll {
+            background: #fff none repeat scroll 0 0;
+            border-radius: 10px;
+            height: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            top: 4px;
+            width: 4px;
+        }
+        @keyframes scrolling {
+        0% {
+            opacity: 0;
+            top: 5px;
+        }
+        30% {
+            opacity: 1;
+            top: 10px;
+        }
+        100% {
+            opacity: 0;
+            top: 25px;
+        }
+        }
+
+        .pad-xl {
+            padding: 200px 0px;
+        }
+
+        .pad-lg {
+            padding: 160px 0px;
+        }
+
+        .pad-sm {
+            padding: 80px 0px;
+        }
+
+        .pad-xs {
+            padding: 30px 0px;
+        }
+
+
+
+ 
+/* 10. Consultas querry (Segun la resolucion de la pantalla el estilo cambia)
+ * =================================================================== */
+
+@media (max-width: 480px) {
+
+    .centradoinici-subtitulo {
+        overflow: hidden;
+        font-size: 0.7em;
+    }
+
+    .section-image span {
+        font-size: 1em;
+        padding: 0 1px;
+        overflow: hidden;
+}
+
+    .centradoinicio h1 {
+        font-size: 50px;
+        padding-top: 15px;
+        overflow: hidden;
+    }
+
+
+
+
+/* 11. Pie de pagina*/
+    footer {
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    footer p {
+        overflow: hidden;
+    text-align: center;
+    }
+
+}
+
+.spanfooter{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.imagencursos {
+    background: #000000 ;
+   overflow: hidden;
+}
+
+.contenedor {
+    overflow: hidden;
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+    overflow: hidden;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+    overflow: hidden;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+    overflow: hidden;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+    overflow: hidden;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+    overflow: hidden;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+    overflow: hidden;
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+    overflow: hidden;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+    overflow: hidden;
+}
+
+.carousel__anterior {
+	left: -30px;
+    overflow: hidden;
+}
+
+.carousel__siguiente {
+	right: -30px;
+    overflow: hidden;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+    overflow: hidden;
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+    overflow: hidden;
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilo del la linea de tiempo*/
+
+
+
+header:after, #lineadetiempo .lineadetiempo-item:after, header:before, #lineadetiempo .lineadetiempo-item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  
+   *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  body {
+    background: #f9f9f9;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, tahoma, verdana;
+    line-height: 20px;
+    font-size: 14px;
+    color: #726f77;
+    
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: "Dosis", arial, tahoma, verdana;
+    font-weight: 500;
+    overflow: hidden;
+  }
+  
+  .project-name {
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  
+  
+  .timelinedot {
+    margin: 13px;  
+    color:white;
+    overflow: hidden;
+  }
+  
+  
+  #lineadetiempo {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    overflow: hidden;
+  }
+  #lineadetiempo:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #028fc7;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+  #lineadetiempo:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    overflow: hidden;
+  }
+  #lineadetiempo .lineadetiempo-item {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-icon {
+    background: #0d2566;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-icon svg {
+    position: relative;
+    top: 14px;
+    left: 14px;
+    overflow: hidden;
+  }
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-contenido {
+    overflow: hidden;
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-contenido h2 {
+    overflow: hidden;
+    padding: 15px;
+    background: #127385;
+    color: #fff;
+    margin: -20px -20px 0 -20px;
+    font-weight: 300;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-contenido p {
+    padding-top: 15px;
+  }
+  
+  #lineadetiempo .lineadetiempo-item .lineadetiempo-content{
+    float: right;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #lineadetiempo {
+      overflow: hidden;
+      margin: 30px;
+      padding: 0px;
+      width: 90%;
+    }
+    #lineadetiempo:before {
+      overflow: hidden;
+      left: 0;
+    }
+    #lineadetiempo .lineadetiempo-item .lineadetiempo-contenido{
+      width: 90%;
+      float: right;
+      overflow: hidden;
+    }
+  
+    #lineadetiempo .lineadetiempo-item .lineadetiempo-icon {
+      overflow: hidden;
+      left: 0;
+    }
+  }
+  
+  
+  
