@@ -1,0 +1,65 @@
+<div class="about">
+    <h3 class="title">Sobre mi: ⠀<a href="#modaleditarsobremi" ><button class="button-85" role="button">✏️</button></a>⠀<a  href="#modaleliminarsobremi"><button  class="button-85" role="button">🗑️</button></a></h3>
+    <p>Soy una persona muy ordenada a la cual le gusta tener anotadas las tareas que debo hacer para realizarlas en un orden pre establecido y de esa manera organizar mejor el tiempo.</p>
+    <p> Una de las razones por la cual estudio la carrera de Ingeniería en sistemas es por el enfoque que tiene sobre el uso de la información y como se gestionan los procesos necesarios para llegar a realizar una tarea o proyecto, de la forma mas eficiente posible. Todo esto aplicando algoritmos informáticos que vayan mejorando a medida que tengan mas información.</p>
+    <div class="box-container">
+        <div class="box">
+            <h3> <span>Edad : </span> 18 </h3>
+            <h3> <span> Direccion : </span> Ciudad Evita, Buenos Aires, Argentina </h3>
+            <h3> <span> numero : </span> +54 11-6951-9065 </h3>
+            <h3> <span> Email : </span> lautaro10.colegio@gmail.com </h3>
+        </div>
+        <div class="box">
+            <h3> <span> Habilidades : </span> Diseñador web, Trabajo en equipo, conductor </h3>
+            <h3> <span> Idiomas : </span>Español (nativo), Ingles (basico) </h3>
+        </div>
+    </div>
+</div>
+
+<div id="modaleditarsobremi" class="modalmask">
+    <div class="modalbox movedown">
+            <div class="login">
+                <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de editar sobre mi</h1>
+                <form action="#" target="" method="get" name="formDatosPersonales">
+                    <label for="edad">edad</label>
+                    <input name="edad" id="edad" placeholder="Numero de tu edad"/>
+                    <label for="apellidos">Direccion</label>
+                    <input  for="direccion" placeholder="Escribe tu direccion"/>                        
+                    <label for="numero" >Numero</label>
+                    <input type="numero" name="numero" id="numero" placeholder="numero" required />
+                    <label for="Email" >Email</label>
+                    <input type="Email" name="Email" id="Email" placeholder="Email" required />
+                    <label for="Habilidades" >Habilidades</label>
+                    <input type="Habilidades" name="Habilidades" id="Habilidades" placeholder="Habilidades" required />
+                    <label for="Idiomas" >Idiomas</label>
+                    <input type="Idiomas" name="Idiomas" id="Idiomas" placeholder="Idiomas" required />
+                    <input type="submit" name="enviar" value="enviar datos"/>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="modaleliminarsobremi" class="modalmask">
+            <div class="modalbox movedown">
+                    <div class="login">
+                        <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de eliminar</h1>
+                        <form action="#" target="" method="get" name="formDatosPersonales">
+
+                            <label for="email" >Eliminar:</label>
+                            <div>
+                                <select>
+                                  <option value="opcion-1">edad</option>
+                                  <option value="opcion-2">Habilidades</option>
+                                  <option value="opcion-n">Direccion</option>
+                                  <option value="opcion-n">Numero</option>
+                                  <option value="opcion-n">Email</option>
+                                  <option value="opcion-n">Idiomas</option>
+                                </select>
+                              </div>
+                            <input type="submit" name="enviar" value="enviar datos"/>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>

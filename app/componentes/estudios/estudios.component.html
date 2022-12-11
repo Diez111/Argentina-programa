@@ -1,0 +1,65 @@
+<section>
+    <div class="experience">
+        <h3 class="title">Estudios:⠀<a href="#editarestudio"><button class="button-85" role="button">✏️</button></a>⠀<a href="#eliminarestudio"><button class="button-85" role="button">🗑️</button></a></h3>
+        <div class="box-container">
+            <div class="box">
+                <span>2023-2028</span>
+                <h3>Universidad Tecnologica Nacional (Universida)</h3>
+                <p>Universidad publica. En la carrera de "Ingeniero en sistemas"</p> 
+            </div>
+          </div> 
+        </div>
+          <div class="experience">
+        <div class="box-container">
+            <div class="box">
+                <span>2016-2022</span>
+                <h3>Instituto Madero (Secundairo tecnico)</h3>
+                <p>Instituto tecnico en la especialidad de electronica</p>
+              </div>
+          </div>
+        </div>
+          <div class="experience">
+        <div class="box-container">
+            <div class="box">
+                <span>2009-2015</span>
+                <h3>Colegio Santa Ana (Primaria) </h3>
+                <p>Colegio primario de Ciudad Evita</p>
+            </div>
+         </div>
+     </div>
+</section>
+
+<div id="editarestudio" class="modalmask">
+  <div class="modalbox movedown">
+          <div class="login">
+              <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de editar estudios</h1>
+              <form action="#" target="" method="get" name="formDatosPersonales">
+                  <label for="Años">Años:</label>
+                  <input type ="text" name="Años" id="Años" placeholder="el tiempo que tardo"/>
+                  <label for="Titulo" >Titulo</label>
+                  <input type="Titulo" name="Titulo" id="Titulo" placeholder="Titulo" required />
+                  <label for="mensaje">Descripcion:</label>
+                  <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                  <input type="submit" name="enviar" value="enviar datos"/>
+               </form>
+          </div>
+      </div>
+  </div>
+
+  <div id="eliminarestudio" class="modalmask"> 
+      <div class="modalbox movedown">
+              <div class="login">
+                  <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de eliminar</h1>
+                  <form action="#" target="" method="get" name="formDatosPersonales">
+                      <label for="email" >Eliminar:</label>
+                          <select>
+                            <option value=""> titulo:</option>
+                            <option value="opcion-1">titulo 1</option>
+                            <option value="opcion-2">titulo 2</option>
+                            <option value="opcion-n">titulo 3</option>
+                          </select>
+                      <input type="submit" name="enviar" value="enviar datos"/>
+                  </form>
+              </div>
+          </div>
+      </div>

@@ -1,0 +1,47 @@
+<section>
+    <div class="experience">
+        <h3 class="title">Experiencia:⠀<a href="#editarexperiencia"><button class="button-85" role="button">✏️</button></a>⠀<a href="#eliminarexperiencia"><button class="button-85" role="button">🗑️</button></a></h3>
+        <div class="box-container">
+            <div class="box">
+                <span>2022- 2022</span>
+                <h3>Pasantia en "Laser Argentina"</h3>
+                <p>Como parte de las 200hs de pasantia impuestas por el gobierno de la provincia de Buenos Aires para los colegios tecnicos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="editarexperiencia" class="modalmask">
+    <div class="modalbox movedown">
+            <div class="login">
+                <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de editar Experiencia</h1>
+                <form action="#" target="" method="get" name="formDatosPersonales">
+                    <label for="Años">Años:</label>
+                    <input type ="text" name="Años" id="Años" placeholder="el tiempo que tardo"/>
+                    <label for="Titulo" >Titulo</label>
+                    <input type="Titulo" name="Titulo" id="Titulo" placeholder="Titulo" required />
+                    <label for="mensaje">Descripcion:</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                    <input type="submit" name="enviar" value="enviar datos"/>
+                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="eliminarexperiencia" class="modalmask"> 
+        <div class="modalbox movedown">
+                <div class="login">
+                    <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de eliminar</h1>
+                    <form action="#" target="" method="get" name="formDatosPersonales">
+                        <label for="email" >Eliminar:</label>
+                            <select>
+                              <option value=""> titulo:</option>
+                              <option value="opcion-1">titulo 1</option>
+                              <option value="opcion-2">titulo 2</option>
+                              <option value="opcion-n">titulo 3</option>
+                            </select>
+                        <input type="submit" name="enviar" value="enviar datos"/>
+                    </form>
+                </div>
+            </div>
+        </div>

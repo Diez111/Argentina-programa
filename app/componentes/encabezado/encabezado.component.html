@@ -1,0 +1,82 @@
+
+    <!--Cabeza de pagina-->
+    <div id="modalinicio" class="modalmask">
+        <div class="modalbox movedown">
+                <div class="login">
+                    <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de login</h1>
+                    <form action="#" target="" method="get" name="formDatosPersonales">
+                        <label for="nombre">Usuario</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu usuario"/>
+                        <label for="apellidos">Contraseña</label>
+                        <input type="text" for="contraseña" placeholder="Escribe tu contraseña"/>
+                        <input type="submit" name="enviar" value="LOGIN"/>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modalcrearcuenta" class="modalmask">
+            <div class="modalbox movedown">
+                    <div class="login">
+                        <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de crear cuenta</h1>
+                        <form action="#" target="" method="get" name="formDatosPersonales">
+                            <label for="nombre">usuario</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu usuario"/>
+                            <label for="apellidos">Contraseña</label>
+                            <input type="text" for="contraseña" placeholder="Escribe tu contraseña"/>                        
+                            <label for="email" >Email</label>
+                            <input type="email" name="email" id="email" placeholder="email" required />
+                            <input type="submit" name="enviar" value="enviar datos"/>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div id="modaleditar" class="modalmask">
+                <div class="modalbox movedown">
+                        <div class="login">
+                            <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de editar</h1>
+                            <form action="#" target="" method="get" name="formDatosPersonales">
+                                <label for="email" >Email</label>
+                                <input type="email" name="email" id="email" placeholder="email" required />
+                                <label for="asunto">Edad:</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="Ponga su edad"/>
+                                <label for="asunto">Numero:</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="Ponga su numero"/>
+                                <label for="asunto">Habilidades:</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="Ponga sus habilidades"/>
+                                <label for="asunto">Idiomas:</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="Ponga los idiomas que sabe"/>
+                                <label for="asunto">Direccion:</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="Ponga su direccion"/>
+                                <label for="mensaje">Sobremi:</label>
+                                <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                                <input type="submit" name="enviar" value="enviar datos"/>
+                             </form>
+        
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modaleeliminar" class="modalmask"> 
+                    <div class="modalbox movedown">
+                            <div class="login">
+                                <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de eliminar</h1>
+                                <form action="#" target="" method="get" name="formDatosPersonales">
+
+                                    <label for="email" >Eliminar:</label>
+                                    <div class="select">
+                                        <select>
+                                          <option value=""> usuario:</option>
+                                          <option value="opcion-1">usuario 1</option>
+                                          <option value="opcion-2">usuario 2</option>
+                                          <option value="opcion-n">usuario 3</option>
+                                        </select>
+                                      </div>
+                                    <input type="submit" name="enviar" value="enviar datos"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>

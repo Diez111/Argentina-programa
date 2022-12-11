@@ -1,0 +1,73 @@
+<section>
+    <div class="contact">
+             <h3 class="title">Contacto:⠀<a href="#editarinfocontacto"><button class="button-85" role="button">✏️</button></a>⠀<a href="#eliminarinfocontacto"><button class="button-85" role="button">🗑️</button></a></h3>
+             <div class="box-container">
+                 <div class="box">
+                     <i class="fas fa-map"></i>
+                     <div class="info">
+                         <h3>Mi direccion:</h3>
+                         <p>Ciudad Evita, Buenos Aires - Argentina</p>
+                       </div>
+                   </div>
+                 <div class="box">
+                     <i class="fas fa-phone"></i>
+                     <div class="info">
+                         <h3>Numero</h3>
+                         <p>+54 11-6951-9065 </p>
+                       </div>
+                   </div>
+                 <div class="box">
+                     <i class="fas fa-envelope"></i>
+                     <div class="info">
+                         <h3>Email:</h3>
+                         <p> lautaro10.colegio@gmail.com </p>
+                        </div>
+                   </div>
+               </div>  
+      </div>
+             <!-- Pie de pagina-->
+           <footer class="footer">
+               <div class="fila">
+                     <p>Hecho con ❤️ por Diez Lautaro</p>
+               </div><!-- fila -->
+             </footer>
+ </section>
+
+
+ <div id="editarinfocontacto" class="modalmask">
+  <div class="modalbox movedown">
+          <div class="login">
+              <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de editar informacion de contacto</h1>
+              <form action="#" target="" method="get" name="formDatosPersonales">
+                  <label for="Email">Email:</label>
+                  <input name="Email" id="Email" placeholder="Correo electronico" required />
+                  <label for="Direccion">Direccion:</label>
+                  <input name="Direccion" id="Direccion" placeholder="Direccion" required />
+                  <label for="Numero">Numero:</label>
+                  <input name="Numero" id="Numero" placeholder="Numero" required />
+                  <input type="submit" name="enviar" value="enviar datos"/>
+              </form>
+
+          </div>
+      </div>
+  </div>
+
+
+  <div id="eliminarinfocontacto" class="modalmask">
+      <div class="modalbox movedown">
+              <div class="login">
+                  <h1 class="text-center" style="color: aliceblue; text-align: center;">Menu de eliminar</h1>
+                  <form action="#" target="" method="get" name="formDatosPersonales">
+                      <label for="email" >Eliminar:</label>
+                      <div>
+                          <select>
+                            <option value="opcion-1">Direccion</option>
+                            <option value="opcion-2">Numero</option>
+                            <option value="opcion-3">Email</option>
+                          </select>
+                        </div>
+                      <input type="submit" name="enviar" value="enviar datos"/>
+                  </form>
+              </div>
+          </div>
+      </div>
